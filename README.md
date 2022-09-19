@@ -1,3 +1,32 @@
+
+## Set Up
+Create A Database `api_requirements_db`
+```sh 
+composer install
+```
+```sh 
+cp .env.example .env
+```
+```sh 
+- setup the database in the `.env`
+- `php artisan migrate --seed`
+```
+```sh
+php artisan serve
+```
+## endpoint
+- `/api/products`
+
+### Filters:
+- Filter by category
+  - `/api/products?filter[category]=insurance`
+- Filter by Price
+  - `/api/products?filter[price]=89000`
+
+### Pagination:
+- Limit the count of item returned
+  - `/api/products?count=2`
+
 # api-requirements
 
 ## Description
