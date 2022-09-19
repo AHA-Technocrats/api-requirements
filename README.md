@@ -8,8 +8,8 @@ composer install
 cp .env.example .env
 ```
 ```sh 
-- setup the database in the `.env`
-- `php artisan migrate --seed`
+ setup the database in the `.env`
+ `php artisan migrate --seed`
 ```
 ```sh
 php artisan serve
@@ -24,8 +24,7 @@ php artisan serve
   - `/api/products?filter[price]=89000`
 
 ### Pagination:
-- Limit the count of item returned
-  - `/api/products?count=2`
+- `/api/products?count=2`
 
 # api-requirements
 
